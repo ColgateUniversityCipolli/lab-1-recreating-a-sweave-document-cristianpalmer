@@ -168,8 +168,8 @@ sleep.table<-xtable(VADeaths ,
                     label = "VADeaths.tab", 
                     caption = "Death Rates per 1000 in Virginia (1940).")
 @
-<<results="asis">>=
-print(sleep.table,table.placement = "H", include.rowname=FALSE, size = "small")
+<<echo = FALSE,results="asis">>=
+print(sleep.table, table.placement = "H", include.rowname = FALSE, size = "small")
 @
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Bibliography
