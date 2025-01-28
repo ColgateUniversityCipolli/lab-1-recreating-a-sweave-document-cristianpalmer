@@ -174,18 +174,11 @@ print(sleep.table, table.placement = "H", include.rowname = FALSE, size = "small
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Bibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{References}
-\tiny(Dahl, D. B., Scott, D., Roosen, C., Magnusson, A., and Swinton, J. (2019). xtable: 
 
-Export Tables to LaTeX or HTML. R package version 1.8-4.
-Horst, A. M., Hill, A. P., and Gorman, K. B. (2020). palmerpenguins: Palmer Archipelago 
+\citep{xtable}
+\citep{palmerpenguins}
 
-(Antarctica) penguin data. R package version 0.1.0.
-Molyneaux, L., Gilliam, S. K., and Florant, L. (1947). Differences in Virginia death rates 
 
-by color, sex, age and rural or urban residence. American Sociological Review, 12(5):525– 
-
-535.)
 \begin{tiny}
 \bibliography{bib}
 \end{tiny}
