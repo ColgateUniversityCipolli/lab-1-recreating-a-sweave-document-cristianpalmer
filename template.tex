@@ -201,12 +201,12 @@ We can also call objct values from R directly.
 \hldef{result.with.error}
 \end{alltt}
 \begin{verbatim}
-## [1] 40.9981
+## [1] 41.07523
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
 
-The result is 40.9980973. Note that I did not type the result, but I used the \verb|\Sexpr{}| command.
+The result is 41.0752263. Note that I did not type the result, but I used the \verb|\Sexpr{}| command.
 
 \subsection{Plotting}
 We can also plot with R.
@@ -263,7 +263,7 @@ If we want to print this nicely, we can do so using the xtable package (Dahl et 
 \end{kframe}
 \end{knitrout}
 % latex table generated in R 4.4.2 by xtable 1.8-4 package
-% Mon Jan 27 19:29:32 2025
+% Mon Jan 27 20:07:28 2025
 \begin{table}[H]
 \centering
 \begingroup\small
@@ -286,9 +286,9 @@ Rural Male & Rural Female & Urban Male & Urban Female \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Bibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\citep{xtable}
-\citep{palmerpenguins}
+\nocite{xtable}
+\nocite{palmerpenguins}
+\nocite{}
 
 
 \begin{tiny}
@@ -303,6 +303,6 @@ Rural Male & Rural Female & Urban Male & Urban Female \\
 \onecolumn
 \section{Appendix}
 
-If you have anything extra, you can add it here in the appendix. This can include images or tables that don't work well in the two-page setup, code snippets you might want to share, etc.
+Below is a table from a paper I’m currently working on. Without the analysis object in R, I have to create this table myself.
 
 \end{document}

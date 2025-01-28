@@ -174,9 +174,9 @@ print(sleep.table, table.placement = "H", include.rowname = FALSE, size = "small
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Bibliography
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\citep{xtable}
-\citep{palmerpenguins}
+\nocite{xtable}
+\nocite{palmerpenguins}
+\nocite{}
 
 
 \begin{tiny}
@@ -191,6 +191,6 @@ print(sleep.table, table.placement = "H", include.rowname = FALSE, size = "small
 \onecolumn
 \section{Appendix}
 
-If you have anything extra, you can add it here in the appendix. This can include images or tables that don't work well in the two-page setup, code snippets you might want to share, etc.
+Below is a table from a paper I’m currently working on. Without the analysis object in R, I have to create this table myself.
 
 \end{document}
