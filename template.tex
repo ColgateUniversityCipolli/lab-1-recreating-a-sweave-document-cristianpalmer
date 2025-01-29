@@ -201,12 +201,12 @@ We can also call objct values from R directly.
 \hldef{result.with.error}
 \end{alltt}
 \begin{verbatim}
-## [1] 41.11298
+## [1] 41.04302
 \end{verbatim}
 \end{kframe}
 \end{knitrout}
 
-The result is 41.1129795. Note that I did not type the result, but I used the \verb|\Sexpr{}| command.
+The result is 41.0430183. Note that I did not type the result, but I used the \verb|\Sexpr{}| command.
 
 \subsection{Plotting}
 We can also plot with R.
@@ -263,7 +263,7 @@ If we want to print this nicely, we can do so using the xtable package (Dahl et 
 \end{kframe}
 \end{knitrout}
 % latex table generated in R 4.4.2 by xtable 1.8-4 package
-% Wed Jan 29 12:56:02 2025
+% Wed Jan 29 13:03:27 2025
 \begin{table}[H]
 \centering
 \begingroup\small
@@ -306,11 +306,11 @@ Rural Male & Rural Female & Urban Male & Urban Female \\
 Below is a table from a paper I’m currently working on. Without the analysis object in R, I have to create this table myself.
 \begin{table}[H]
 \begin{center}
-\begin{tabular}{lrcccc}\hline
+\begin{tabular}{lrccccc}\hline
 Term & \ SS (Type III) & \ df &\ F &\ p-value &\ $\epsilon_p^2$ \\\hline
 (Intercept) &4.95 &1.00 &5.37 &0.0209\\
 White-Poor (Z) &3.17 &1.00 &3.44 &0.0642 & 0.02\\
-Zero-Sum (Z ) &17.96 &1.00 &19.48 &$<$0.0001 &0.03\\
+Zero-Sum (Z ) &17.96 &1.00 &19.48 &\hspace{-0.78em}$<$0.0001 &0.03\\
 Education (Z) &0.39 &1.00 &0.42 &0.5161 &0.00\\
 Income (Z) &0.16 &1.00 &0.17 &0.6817 &0.00\\
 Democrat &9.60 &1.00 &10.42 &0.0013 &0.02\\
