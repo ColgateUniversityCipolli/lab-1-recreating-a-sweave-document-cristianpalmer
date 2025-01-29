@@ -161,7 +161,7 @@ data(VADeaths)
 head(VADeaths) # Take a peek of the data
 @
 
-If we want to print this nicely, we can do so using the xtable package (Dahl et al., 2019), which we can reference using the label (Table 1).
+If we want to print this nicely, we can do so using the xtable package (Dahl et al., 2019), which we can reference using the label (Table \ref{VADeaths.tab}).
 <<size="scriptsize">>=
 library(xtable)
 sleep.table<-xtable(VADeaths ,
@@ -176,7 +176,7 @@ print(sleep.table, table.placement = "H", include.rowname = FALSE, size = "small
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \nocite{xtable}
 \nocite{palmerpenguins}
-\nocite{}
+\nocite{9abfb448-e032-3b5b-972c-40954bc7e23c}
 
 
 \begin{tiny}
@@ -192,5 +192,39 @@ print(sleep.table, table.placement = "H", include.rowname = FALSE, size = "small
 \section{Appendix}
 
 Below is a table from a paper I’m currently working on. Without the analysis object in R, I have to create this table myself.
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{lrcccc}\hline
+Term & \ SS (Type III) & \ df &\ F &\ p-value &\ $\varepsilon_p^2$ \\\hline
+(Intercept) &4.95 &1.00 &5.37 &0.0209\\
+White-Poor (Z) &3.17 &1.00 &3.44 &0.0642 & 0.02\\
+Zero-Sum (Z ) &17.96 &1.00 &19.48 &$<$0.0001 &0.03\\
+Education (Z) &0.39 &1.00 &0.42 &0.5161 &0.00\\
+Income (Z) &0.16 &1.00 &0.17 &0.6817 &0.00\\
+Democrat &9.60 &1.00 &10.42 &0.0013 &0.02\\
+Black-Poor (Z) &1.92 &1.00 &2.08 &0.1496 &0.00\\
+White-Poor (Z)×Zero-Sum (Z) &7.96 &1.00 &8.63 &0.0034 &0.01\\
+Residuals &506.92 &550.00\\\hline
+\end{tabular} 
+\caption{ANOVA table for Case Study I.}
+\label{anova.tab}
+\end{center}
+\end{table}
+The \textbf{palmerpenguins} package for \textbf{R} \citep{palmerpenguins} provides data on adult foraging penguins near Palmer Station, Antarctica. Figure \ref{fig2} is too big to fit nicely in our column-based-template above, so I’ve placed it here in the abstract by saving it and presenting it scaled to 0.75.
 
+
+
+<<size="scriptsize", eval=FALSE>>==
+library(palmerpenguins)
+pdf("figure/penguins.pdf", width = 8, height = 5)
+plot(penguins)
+dev.off()
+@
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.75]{figure/penguins.pdf}
+\caption{Data on adult foraging penguins near Palmer Station, Antarctica.}
+\label{fig2}
+\end{center}
+\end{figure}
 \end{document}
