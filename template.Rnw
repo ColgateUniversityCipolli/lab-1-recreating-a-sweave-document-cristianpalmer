@@ -27,10 +27,10 @@
 \title{Lab 1 -- MATH 240 -- Computational Statistics}
 
 \author{
-  First Author \\
-  Affiliation  \\
-  Department  \\
-  {\tt email@domain}
+  Cristian Palmer \\
+  Student  \\
+  Mathematics  \\
+  {\tt cpalmer@colgate.edu}
 }
 
 \date{}
@@ -55,7 +55,7 @@ For this lab, you will
 \item Recreate this document (except put your name/info at the top) to get used to writing in LATEX and to see the types of things we can do when creating a document to convey statistical information. Make sure to commit and push your work using GitHub desktop as you finish each section.
 \end{enumerate}
 
-\noindent \textbf{Remark:} You will find the class Sweave cheatsheet to be incredibly (\emph{incredibly}) helpful.
+\noindent \textbf{Remark:} You will find the class Sweave cheatsheet to be \textit{incredibly} \verb|(\emph{incredibly})| helpful.
 
 \section{Word Processing Tasks}
 \subsection{Centering Text}
@@ -100,7 +100,7 @@ When we need to show multiple steps, we can create a multi-line equation that is
 8(x-5)+x&=9(x-5)+5 \\
 8x-40+x&=9x-45+5 \tag{Distributing} \\
 9x-40&=9x-40 \tag{Combining like terms} \\
-9x&=9x \tag{Combining like terms} \\
+9x&=9x \tag{Adding 40 to both sides} \\
 x&=x \tag{Dividing both sides by 9} \\
 \end{align*}
 The equality holds for any x.
